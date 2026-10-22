@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -17,13 +18,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                echo 'Next: build the student-service Docker image'
+                echo 'Docker build will be configured next'
             }
         }
 
         stage('Push to AWS ECR') {
             steps {
-                echo 'Next: authenticate and push the image to AWS ECR'
+                echo 'ECR push will be configured next'
             }
         }
     }
